@@ -13,9 +13,16 @@ angular.module('velorioAguaApp')
             if ($scope.newDenunciation === '') {
                 return;
             }
-            $http.post('/api/denunciations', {
-                name: $scope.newDenunciation
-            });
+
+            var denunciationJson = {
+                name: $scope.name,
+                address: $scope.address,
+                description: $scope.description,
+                date: new Date(),
+                hour: $scope.hour
+            }
+
+            $http.post('/api/denunciations', denunciationJson);
             $scope.newDenunciation = '';
         };
 
