@@ -1,9 +1,9 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 <header class="hero-unit" id="banner">
     <div class="container">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-        <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+        <h1>Velório da Água</h1>
+        <p class="lead">Denuncie Abuso de água pelo Brasil.</p>
+        <img src="assets/images/velorio.png" alt="I'm Yeoman">
     </div>
 </header>
 <div class="container">
@@ -11,14 +11,18 @@
         <div class="col-lg-12">
             <h1 class="page-header">Denúncias sendo criadas ao redor do globo:</h1>
             <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="denunciation in awesomeDenunciations">
-                <li><a href="#" tooltip="{{denunciation.info}}">{{denunciation.name}}<button type="button" class="close" ng-click="deleteDenunciation(denunciation)">&times;</button></a></li>
+                <li><a href="/denunciation/{{denunciation.id}}" tooltip="{{denunciation.info}}">{{denunciation.name}}<button type="button" class="close" ng-click="deleteDenunciation(denunciation)">&times;</button></a></li>
             </ul>
         </div>
     </div>
     <form class="denunciation-form">
         <label>Crie uma Denúncia Abaixo:</label>
         <p class="input-group">
-            <input type="text" class="form-control" placeholder="Add a new denunciation here." ng-model="newDenunciation">
+            <input type="text" class="form-control" placeholder="Nome do Infrator" ng-model="name">
+            <input type="text" class="form-control" placeholder="Endereço da ocorrência" ng-model="address">
+            <input type="text" class="form-control" placeholder="Descrição do desperdício" ng-model="description">
+            <input type="text" class="form-control" placeholder="Data" ng-model="date">
+            <input type="text" class="form-control" placeholder="Hora" ng-model="hour">
             <span class="input-group-btn">
         <button type="submit" class="btn btn-primary" ng-click="addDenunciation()">Adicione uma nova denúncia</button>
       </span>

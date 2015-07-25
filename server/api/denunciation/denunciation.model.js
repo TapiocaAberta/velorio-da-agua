@@ -5,8 +5,10 @@ var mongoose = require('mongoose'),
 
 var DenunciationSchema = new Schema({
     name: String,
-    info: String,
-    active: Boolean
+    address: String,
+    date: Date,
+    hour: String,
+    description: String
 });
 
 module.exports = mongoose.model('Denunciation', DenunciationSchema);
