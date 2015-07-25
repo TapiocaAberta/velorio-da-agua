@@ -7,3 +7,5 @@ https://github.com/DaftMonk/generator-angular-fullstack
 http://fullstack-demo.herokuapp.com/
 
 http://www.bootstrapzero.com/
+
+https://pixlr.com/editor/
