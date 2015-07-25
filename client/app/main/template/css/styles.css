@@ -93,6 +93,7 @@ h1 {
   width: 100%;
   position:static;
   top:-32px;
+  box-shadow: rgb(21, 21, 21) 0px 2px 7px;
 }
 
 #nav.affix {
@@ -181,7 +182,6 @@ h1 {
  
 
 section {
-  color: #ffffff;
   min-height: 400px;
   height: auto !important;
   height: 100%;
@@ -190,6 +190,7 @@ section {
 
 .bg-1 {
 	background-color: #000044;
+  color: #ffffff;
 }
 
 .bg-2 {
@@ -211,4 +212,27 @@ section {
 .bg-4 {
 	padding-top:30px;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20,20,20,0.2)),to(rgba(255,255,255,0)), color-stop(1,#000));
+}
+
+.events-container {
+  display: inline-table;
+}
+.event-card {
+  background-color: rgba(255, 255, 255, 0.14);
+  float: left;
+  width: 48%;
+  padding: 2%;
+  margin-right: 4%;
+  margin-bottom: 5%;
+}
+.event-card:nth-child(even) {
+  margin-right: 0;
+}
+
+.event-card p {
+  font-size: 17px;
+  margin: 0;
+}
+.event-card h2 {
+  margin-bottom: 5%;
 }
