@@ -5,6 +5,8 @@
 <!-- toc -->
 * [About](#about)
 * [How to build](#how-to-build)
+  * [Dependencies](#dependencies)
+  * [Quick Start](#quick-start)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Author](#author)
