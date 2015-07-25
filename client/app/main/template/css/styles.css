@@ -101,16 +101,10 @@ h1 {
 }
 
 #nav {
-<<<<<<< HEAD
   width: 100%;
   position:static;
   top:-32px;
   box-shadow: rgb(21, 21, 21) 0px 2px 7px;
-=======
-    width: 100%;
-    position: static;
-    top: -32px;
->>>>>>> b7c4b29eff0b209a6aa8b18e329d95a41549039b
 }
 
 #nav.affix {
