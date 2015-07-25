@@ -237,3 +237,8 @@ section {
 .event-card h2 {
   margin-bottom: 5%;
 }
+
+.masthead img {
+  float: right;
+  width: 8%;
+}
