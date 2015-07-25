@@ -35,7 +35,9 @@ body {
     padding-bottom: 20px;
 }
 
-
+.navbar {
+  margin-bottom: 0; 
+}
 /* Custom page CSS
 -------------------------------------------------- */
 
@@ -172,11 +174,6 @@ h1 {
     border-width: 0;
 }
 
-@media (max-width: 768px) {
-    header {
-        height: 95px;
-    }
-}
 
 #map-canvas {
     width: 100%;
@@ -209,7 +206,7 @@ section {
 }
 
 .bg-1 {
-	background-color: #000044;
+  background-color: #000044;
   color: #ffffff;
 }
 
@@ -237,8 +234,6 @@ section {
 .event-card h2 {
   margin-bottom: 5%;
 }
-
-
 .masthead img {
   float: right;
   width: 8%;
