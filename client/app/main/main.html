@@ -3,7 +3,7 @@
     <div class="container">
         <h1>Velório da Água</h1>
         <p class="lead">Denuncie Abuso de água pelo Brasil.</p>
-        <img src="assets/images/velorio.png" alt="I'm Yeoman">
+        <img src="assets/images/velorio.png" alt="Velório da Água">
     </div>
 </header>
 <div class="container">
@@ -11,7 +11,7 @@
         <div class="col-lg-12">
             <h1 class="page-header">Denúncias sendo criadas ao redor do globo:</h1>
             <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="denunciation in awesomeDenunciations">
-                <li><a href="/denunciation/{{denunciation.id}}" tooltip="{{denunciation.info}}">{{denunciation.name}}<button type="button" class="close" ng-click="deleteDenunciation(denunciation)">&times;</button></a></li>
+                <li><a href="/denunciation/{{denunciation._id}}" tooltip="{{denunciation.info}}">{{denunciation.name}}<button type="button" class="close" ng-click="deleteDenunciation(denunciation)">&times;</button></a></li>
             </ul>
         </div>
     </div>
