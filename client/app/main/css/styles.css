@@ -36,7 +36,7 @@ body {
 }
 
 .navbar {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 /* Custom page CSS
 -------------------------------------------------- */
@@ -222,6 +222,7 @@ section {
   padding: 2%;
   margin-right: 4%;
   margin-bottom: 5%;
+  height:300px;
 }
 .event-card:nth-child(even) {
   margin-right: 0;
@@ -247,5 +248,9 @@ section {
   }
   .masthead {
     box-shadow: rgb(21, 21, 21) 0px 2px 7px;
+  }
+  .event-card {
+      width:100%;
+      margin-right:0;
   }
 }
