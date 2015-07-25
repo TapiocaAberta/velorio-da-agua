@@ -5,11 +5,11 @@
 
 'use strict';
 
-var Thing = require('../api/thing/thing.model');
+var Denunciation = require('../api/denunciation/denunciation.model');
 var User = require('../api/user/user.model');
 
-Thing.find({}).remove(function() {
-    Thing.create({
+Denunciation.find({}).remove(function() {
+    Denunciation.create({
         name: 'Development Tools',
         info: 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
     }, {
