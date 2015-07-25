@@ -5,7 +5,7 @@
 set -e
 
 find -regex ".*\.\(js\|json\|css\|html\)" \
-    -not -path "./bower_components/*" \
+    -not -path "./client/bower_components/*" \
     -not -path "./node_modules/*" \
     -not -path "./dist/*" \
     -not -path "./.publish/*" \
