@@ -32,7 +32,7 @@ Make sure these are installed first.
 
 1. In bash/terminal/command line, `cd` into your project directory.
 
-2. Run `npm install -g yo bower grunt-cli gulp && npm install && bower install` to install required dependencies.
+2. Run `npm install -g yo bower grunt-cli && npm install && bower install` to install required dependencies.
 
 3. When it's done installing, run one of the task runners to get going:
 

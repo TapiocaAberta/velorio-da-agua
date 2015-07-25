@@ -2,28 +2,28 @@
 
 angular.module('velorioAguaApp')
     .controller('MainCtrl', function($scope, $http, socket) {
-        $scope.awesomeThings = [];
+        $scope.awesomeDenunciations = [];
 
-        $http.get('/api/things').success(function(awesomeThings) {
-            $scope.awesomeThings = awesomeThings;
-            socket.syncUpdates('thing', $scope.awesomeThings);
+        $http.get('/api/denunciations').success(function(awesomeDenunciations) {
+            $scope.awesomeDenunciations = awesomeDenunciations;
+            socket.syncUpdates('denunciation', $scope.awesomeDenunciations);
         });
 
-        $scope.addThing = function() {
-            if ($scope.newThing === '') {
+        $scope.addDenunciation = function() {
+            if ($scope.newDenunciation === '') {
                 return;
             }
-            $http.post('/api/things', {
-                name: $scope.newThing
+            $http.post('/api/denunciations', {
+                name: $scope.newDenunciation
             });
-            $scope.newThing = '';
+            $scope.newDenunciation = '';
         };
 
-        $scope.deleteThing = function(thing) {
-            $http.delete('/api/things/' + thing._id);
+        $scope.deleteDenunciation = function(denunciation) {
+            $http.delete('/api/denunciations/' + denunciation._id);
         };
 
         $scope.$on('$destroy', function() {
-            socket.unsyncUpdates('thing');
+            socket.unsyncUpdates('denunciation');
         });
     });
