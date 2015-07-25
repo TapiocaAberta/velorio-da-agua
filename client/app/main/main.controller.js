@@ -23,7 +23,12 @@ angular.module('velorioAguaApp')
             }
 
             $http.post('/api/denunciations', denunciationJson);
-            $scope.newDenunciation = '';
+
+            $scope.name = '';
+            $scope.address = '';
+            $scope.description = '';
+            $scope.date = '';
+            $scope.hour = '';
         };
 
         $scope.deleteDenunciation = function(denunciation) {

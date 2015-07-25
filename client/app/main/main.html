@@ -48,7 +48,7 @@
             </div>
             <div class="events-container">
                 <div class="event-card" ng-repeat="denunciation in awesomeDenunciations">
-                    <h2>{{denunciation.name}}</h2>
+                    <a href="/denunciation{denunciation._id}"<h2>{{denunciation.name}}</h2></a>
                     <p>Data: {{denunciation.date}}</p>
                     <p>Endereço: {{denunciation.address}}</p>
                     <p>Descrição: {{denunciation.description}}</p>
@@ -72,22 +72,22 @@
             <p class="lead">
                 Nome do infrator:<br>
             </P>
-            <input type="text" name="nome" required size=50 class="lead" ng-model="name"><br>
+            <input type="text" name="nome" size=50 class="lead" ng-model="name"><br>
 
             <p class="lead">
                 Endereço da ocorrência:<br>
             <p>
-            <input type="text" name="endereco" required size=50 class="lead" ng-model="address"><br>
+            <input type="text" name="endereco" size=50 class="lead" ng-model="address"><br>
 
             <p class="lead">
                 Data da ocorrência:<br>
             <p>
-            <input type="text" name="data_ocorrencia" required size=20 class="lead" ng-model="date"><br>
+            <input type="text" name="data_ocorrencia" size=20 class="lead" ng-model="date"><br>
 
             <p class="lead">
                 Hora da ocorrência:<br>
             </P>
-            <input type="text" name="hora_ocorrencia" required size=20 class="lead"  ng-model="hour"><br>
+            <input type="text" name="hora_ocorrencia" size=20 class="lead"  ng-model="hour"><br>
 
             <p class="lead">
                 Descrição da ocorrência:<br>

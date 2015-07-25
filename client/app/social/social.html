@@ -1,12 +1,3 @@
-<div ng-controller='SocialCtrl'>
-    <div facebook class="facebookShare" data-title='{{title}}' data-picture-url='http://i.imgur.com/WACv9Cl.jpg' data-url='{{url}}' data-shares='shares'>{{ shares }}</div>
-    <a facebook-feed-share class="facebookShare" data-url='http://google.com' data-shares='shares' , data-description="Example text">{{ shares }}</a>
-    <br />
-    <br />
-    <a twitter data-count='horizontal' data-url='{{url}}' data-via='notsosleepy' data-size="medium" data-text='{{text}}'></a>
-    <br />
-    <br />
-    <div gplus data-size="tall" data-annotation="bubble" data-href='{{url}}' data-action='share'></div>
-    <br/>
-    <br/>
-</div>
+<a facebook class="facebookShare" data-url='http://google.com' data-shares='shares'>{{ shares }}</a>
+<a twitter data-lang="en" data-count='horizontal' data-url='http://google.com' data-via='notsosleepy' data-size="medium" data-text='Testing Twitter Share'></a>
+<div gplus class="g-plus" data-size="tall" data-annotation="bubble" data-href='http://google.com' data-action='share'></div>

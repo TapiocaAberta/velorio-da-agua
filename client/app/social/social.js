@@ -3,9 +3,9 @@
 angular.module('velorioAguaApp')
     .config(function($stateProvider) {
         $stateProvider
-            .state('social2', {
-                url: '/social2',
-                templateUrl: 'app/social2/social2.html',
-                controller: 'Social2Ctrl'
+            .state('social', {
+                url: '/social',
+                templateUrl: 'app/social/social.html',
+                controller: 'SocialCtrl'
             });
     });

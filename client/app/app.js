@@ -6,7 +6,8 @@ angular.module('velorioAguaApp', [
         'ngSanitize',
         'btford.socket-io',
         'ui.router',
-        'ui.bootstrap'
+        'ui.bootstrap',
+        'djds4rce.angular-socialshare'
     ])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
         $urlRouterProvider
