@@ -8,6 +8,6 @@ angular.module('velorioAguaApp')
 
         $http.get('/api/denunciations/'+$stateParams.id).success(function(denunciation) {
             $scope.denunciation = denunciation;
+            console.log($scope.denunciation);
         });
     });
-});
