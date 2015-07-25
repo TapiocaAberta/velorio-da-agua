@@ -238,7 +238,19 @@ section {
   margin-bottom: 5%;
 }
 
+
 .masthead img {
   float: right;
   width: 8%;
+}
+.masthead .title {
+  float: left;
+}
+@media (max-width: 768px) {
+  .navbar, img {
+    display: none;
+  }
+  .masthead {
+    box-shadow: rgb(21, 21, 21) 0px 2px 7px;
+  }
 }
