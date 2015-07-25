@@ -1,12 +1,12 @@
 <header class="masthead">
     <div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <h1><a href="#" title="Bootstrap Template">O Velório da Água</a>
+        <div class="row">
+            <div class="col-sm-6">
+                <h1><a href="#" title="Bootstrap Template">O Velório da Água</a>
                 <p class="lead">A água se foi :(</p></h1>
+            </div>
+            <img src="img/logo1.png">
         </div>
-        <img src="img/logo1.png">
-    </div>
     </div>
     <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
         <div class="container">
@@ -20,8 +20,7 @@
         </div>
     </div>
 </header>
-
-
+<div ng-include="'social/social.html'"></div>
 <div class="divider" id="section1"></div>
 <section>
     <div class="container">
@@ -29,7 +28,6 @@
             <div class="page-header">
                 <h1>Sobre</h1>
             </div>
-
             <p class="lead">Tem um vizinho lavando o quintal? Está vendo alguém gastando água? Vamos fazer um velório!</p>
             <p class="lead">O velório da água é uma iniciativa que reúnes pessoas que não suportam o disperdício de água. Se você vir alguém gastand água, deuncie! Cada denuncia se transforma em um evento de funeral. Muitas pessoas vestidas de preto aparecerão para velar a água que se foi :(</p>
             <p class="lead"><a href="http://especiais.g1.globo.com/economia/crise-da-agua/nivel-dos-reservatorios/" target="_blank">Acompanhe o nível dos reservatórios</a>
@@ -37,9 +35,7 @@
         </div>
     </div>
 </section>
-
 <div class="divider" id="section2"></div>
-
 <section class="bg-1">
     <div class="container">
         <div class="col-sm-10 col-sm-offset-1">
@@ -48,7 +44,7 @@
             </div>
             <div class="events-container">
                 <div class="event-card" ng-repeat="denunciation in awesomeDenunciations">
-                    <a href="/denunciation{denunciation._id}"<h2>{{denunciation.name}}</h2></a>
+                    <h2>{{denunciation.name}}</h2>
                     <p>Data: {{denunciation.date}}</p>
                     <p>Endereço: {{denunciation.address}}</p>
                     <p>Descrição: {{denunciation.description}}</p>
@@ -57,54 +53,52 @@
         </div>
     </div>
 </section>
-
 <div class="divider" id="section3"></div>
-
 <div class="container" id="section3">
     <div class="container">
         <div class="col-sm-10 col-sm-offset-1">
             <div class="page-header">
                 <h1>Denuncie!</h1>
-                </div>
-
-                <form>
-            <br>
-            <p class="lead">
-                Nome do infrator:<br>
-            </P>
-            <input type="text" name="nome" size=50 class="lead" ng-model="name"><br>
-
-            <p class="lead">
-                Endereço da ocorrência:<br>
-            <p>
-            <input type="text" name="endereco" size=50 class="lead" ng-model="address"><br>
-
-            <p class="lead">
-                Data da ocorrência:<br>
-            <p>
-            <input type="text" name="data_ocorrencia" size=20 class="lead" ng-model="date"><br>
-
-            <p class="lead">
-                Hora da ocorrência:<br>
-            </P>
-            <input type="text" name="hora_ocorrencia" size=20 class="lead"  ng-model="hour"><br>
-
-            <p class="lead">
-                Descrição da ocorrência:<br>
-            <p>
-            <textarea name="descricao_ocorrencia" rows="10" cols="77" ng-model="description"></textarea>
-                        <br>
-                        <br>
-
-            <input type="submit" value="Enviar denúncia!" class="lead" ng-click="addDenunciation()">
-</form>
-</P>
-
-
-
             </div>
+            <form>
+                <br>
+                <p class="lead">
+                    Nome do infrator:
+                    <br>
+                </P>
+                <input type="text" name="nome" required size=50 class="lead" ng-model="name">
+                <br>
+                <p class="lead">
+                    Endereço da ocorrência:
+                    <br>
+                    <p>
+                        <input type="text" name="endereco" required size=50 class="lead" ng-model="address">
+                        <br>
+                        <p class="lead">
+                            Data da ocorrência:
+                            <br>
+                            <p>
+                                <input type="text" name="data_ocorrencia" required size=20 class="lead" ng-model="date">
+                                <br>
+                                <p class="lead">
+                                    Hora da ocorrência:
+                                    <br>
+                                </P>
+                                <input type="text" name="hora_ocorrencia" required size=20 class="lead" ng-model="hour">
+                                <br>
+                                <p class="lead">
+                                    Descrição da ocorrência:
+                                    <br>
+                                    <p>
+                                        <textarea name="descricao_ocorrencia" rows="10" cols="77" ng-model="description"></textarea>
+                                        <br>
+                                        <br>
+                                        <input type="submit" value="Enviar denúncia!" class="lead" ng-click="addDenunciation()">
+            </form>
+            </P>
         </div>
     </div>
+</div>
 </div>
 <div id="footer">
     <div class="container">
