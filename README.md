@@ -20,11 +20,19 @@ The base structure of the project is based on [angular-fullstack](https://github
 
 ## How to build
 
-Install dev dependencies:
+### Dependencies
+Make sure these are installed first.
 
-```sh
-$ npm i && bower install
-```
+* [Node.js](http://nodejs.org)
+* [Grunt](http://gruntjs.com/)
+
+### Quick Start
+
+1. In bash/terminal/command line, `cd` into your project directory.
+
+2. Run `npm install -g yo bower grunt-cli gulp && npm install && bower install` to install required dependencies.
+
+3. When it's done installing, run one of the task runners to get going:
 
 ## Usage
 
