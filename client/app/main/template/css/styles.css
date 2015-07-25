@@ -216,6 +216,7 @@ section {
 
 .events-container {
   display: inline-table;
+  width: 100%;
 }
 .event-card {
   background-color: rgba(255, 255, 255, 0.14);

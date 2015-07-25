@@ -59,35 +59,11 @@
                 <h1>Próximos Eventos</h1>
             </div>
             <div class="events-container">
-                <div class="event-card">
-                    <h2>Nome do gastador de água</h2>
-                    <p>Data: 26/08/1994 20:54:00</p>
-                    <p>Endereço: Rua xyz, 1234 - São Paulo</p>
-                    <p>Descrição: Uma descrição de loreum ipsum fíctícia</p>
-                </div>
-                <div class="event-card">
-                    <h2>Nome do gastador de água</h2>
-                    <p>Data: 26/08/1994 20:54:00</p>
-                    <p>Endereço: Rua xyz, 1234 - São Paulo</p>
-                    <p>Descrição: Uma descrição de loreum ipsum fíctícia</p>
-                </div>
-                <div class="event-card">
-                    <h2>Nome do gastador de água</h2>
-                    <p>Data: 26/08/1994 20:54:00</p>
-                    <p>Endereço: Rua xyz, 1234 - São Paulo</p>
-                    <p>Descrição: Uma descrição de loreum ipsum fíctícia</p>
-                </div>
-                <div class="event-card">
-                    <h2>Nome do gastador de água</h2>
-                    <p>Data: 26/08/1994 20:54:00</p>
-                    <p>Endereço: Rua xyz, 1234 - São Paulo</p>
-                    <p>Descrição: Uma descrição de loreum ipsum fíctícia</p>
-                </div>
-                <div class="event-card">
-                    <h2>Nome do gastador de água</h2>
-                    <p>Data: 26/08/1994 20:54:00</p>
-                    <p>Endereço: Rua xyz, 1234 - São Paulo</p>
-                    <p>Descrição: Uma descrição de loreum ipsum fíctícia</p>
+                <div class="event-card" ng-repeat="denunciation in awesomeDenunciations">
+                    <h2>{{denunciation.name}}</h2>
+                    <p>Data: {{denunciation.date}}</p>
+                    <p>Endereço: {{denunciation.address}}</p>
+                    <p>Descrição: {{denunciation.description}}</p>
                 </div>
             </div>
         </div>
@@ -106,32 +82,33 @@
 				<form>
 			<br>
 			<p class="lead">
-				Nome do infrator:<br></P>
-								<input type="text" name="nome" required size=50 class="lead"><br>
+				Nome do infrator:<br>
+            </P>
+			<input type="text" name="nome" required size=50 class="lead" ng-model="name"><br>
 				
-					<p class="lead">
-					Endereço da ocorrência:<br><p>
-					<input type="text" name="endereco" required size=50 class="lead"><br>
+			<p class="lead">
+				Endereço da ocorrência:<br>
+            <p>
+			<input type="text" name="endereco" required size=50 class="lead" ng-model="address"><br>
 				
-					<p class="lead">
-					Data da ocorrência:<br> <p>
-					<input type="text" name="data_ocorrencia" required size=20 class="lead"><br>
+		    <p class="lead">
+				Data da ocorrência:<br> 
+            <p>
+			<input type="text" name="data_ocorrencia" required size=20 class="lead" ng-model="date"><br>
 					
-					<p class="lead">
-					Hora da ocorrência:<br></P>
-					<input type="text" name="hora_ocorrencia" required size=20 class="lead"><br>
-				
-							<p class="lead">
-							Descrição da ocorrência:<br><p>
-						<textarea name="descricao_ocorrencia" rows="10" cols="77">
-						</textarea>
+		    <p class="lead">
+				Hora da ocorrência:<br>
+            </P>
+			<input type="text" name="hora_ocorrencia" required size=20 class="lead"  ng-model="hour"><br>
+                
+			<p class="lead">
+			    Descrição da ocorrência:<br>
+            <p>
+			<textarea name="descricao_ocorrencia" rows="10" cols="77" ng-model="description"></textarea>
 						<br>
 						<br>
 								
-						 <input type="submit" value="Enviar denúncia!" class="lead"> 
-						 
-
-
+			<input type="submit" value="Enviar denúncia!" class="lead" ng-click="addDenunciation()"> 
 </form> 
 </P>
 				

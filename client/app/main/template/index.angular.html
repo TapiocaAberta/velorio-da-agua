@@ -59,11 +59,11 @@
                 <h1>Próximos Eventos</h1>
             </div>
             <div class="events-container">
-                <div class="event-card" ng-repeat="event in events">
-                    <h2>{{event.name}}</h2>
-                    <p>Data: {{event.date}}</p>
-                    <p>Endereço: {{event.address}}</p>
-                    <p>Descrição: {{event.describe}}</p>
+                <div class="event-card" ng-repeat="denunciation in awesomeDenunciations">
+                    <h2>{{denunciation.name}}</h2>
+                    <p>Data: {{denunciation.date}}</p>
+                    <p>Endereço: {{denunciation.address}}</p>
+                    <p>Descrição: {{denunciation.description}}</p>
                 </div>
             </div>
         </div>
