@@ -46,7 +46,7 @@
             <div class="events-container">
                 <div class="event-card" ng-repeat="denunciation in awesomeDenunciations">
                     <h2>{{denunciation.name}}</h2>
-                    <p>Data: {{denunciation.date}}</p>
+                    <p>Data: {{denunciation.date | date:'dd/MM/yyyy'}}</p>
                     <p>Endereço: {{denunciation.address}}</p>
                     <p>Descrição: {{denunciation.description}}</p>
                 </div>
