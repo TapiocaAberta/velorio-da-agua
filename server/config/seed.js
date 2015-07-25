@@ -10,23 +10,29 @@ var User = require('../api/user/user.model');
 
 Denunciation.find({}).remove(function() {
     Denunciation.create({
-        name: 'Development Tools',
-        info: 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
+        name: "Dona Amélia",
+        address: "Rua do desperdicío, 111",
+        date: "25/07/2015",
+        hour: "15:35",
+        description: "Uma senhora meio rabugenta lavando a rua, repete o mesmo ato todo santo dia"
     }, {
-        name: 'Server and Client integration',
-        info: 'Built with a powerful and fun stack: MongoDB, Express, AngularJS, and Node.'
+        name: "Seu Rubens",
+        address: "Rua do desperdicío, 345",
+        date: "24/07/2015",
+        hour: "10:00",
+        description: "Todo dia o seu Rubens Lava o carro"
     }, {
-        name: 'Smart Build System',
-        info: 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html'
+        name: "Carlos Alberto de Nóbrega",
+        address: "Rua da praça, 111",
+        date: "15/07/2015",
+        hour: "23:00",
+        description: "Várias piadas sem graça sobre desperdício de Água."
     }, {
-        name: 'Modular Structure',
-        info: 'Best practice client and server structures allow for more code reusability and maximum scalability'
-    }, {
-        name: 'Optimized Build',
-        info: 'Build process packs up your templates as a single JavaScript payload, minifies your scripts/css/images, and rewrites asset names for caching.'
-    }, {
-        name: 'Deployment Ready',
-        info: 'Easily deploy your app to Heroku or Openshift with the heroku and openshift subgenerators'
+        name: "Mussun Ipsum",
+        address: "Rua dos Loren Ipsum, 111",
+        date: "25/07/2015",
+        hour: "15:35",
+        description: "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis."
     });
 });
 
